@@ -8,12 +8,19 @@
 
     <ImageView
         android:id="@+id/mickeyPic"
-        android:layout_width="373dp"
-        android:layout_height="633dp"
+        android:layout_width="181dp"
+        android:layout_height="273dp"
         android:onClick="clickFunction"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/pic51" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="181dp"
+        android:layout_height="273dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mickeyPic"
+        app:srcCompat="@drawable/pic2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
