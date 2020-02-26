@@ -7,20 +7,58 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/mickeyPic"
-        android:layout_width="181dp"
-        android:layout_height="273dp"
-        android:onClick="clickFunction"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pic51" />
+        android:id="@+id/pandaPic"
+        android:layout_width="203dp"
+        android:layout_height="237dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:onClick="clickPandaFunction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/goofyPic"
+        app:layout_constraintTop_toBottomOf="@+id/dogPic"
+        app:srcCompat="@drawable/pic10" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="181dp"
-        android:layout_height="273dp"
-        android:layout_marginTop="5dp"
+        android:id="@+id/jerryPic"
+        android:layout_width="203dp"
+        android:layout_height="237dp"
+        android:onClick="clickJerryFunction"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mickeyPic"
-        app:srcCompat="@drawable/pic2" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pic9" />
+
+    <ImageView
+        android:id="@+id/dogPic"
+        android:layout_width="203dp"
+        android:layout_height="237dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:onClick="clickDogFunction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/jerryPic"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pic8" />
+
+    <ImageView
+        android:id="@+id/goofyPic"
+        android:layout_width="203dp"
+        android:layout_height="237dp"
+        android:layout_marginTop="12dp"
+        android:onClick="clickGoofyFunction"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jerryPic"
+        app:srcCompat="@drawable/pic7" />
+
+    <ImageView
+        android:id="@+id/sunPic"
+        android:layout_width="427dp"
+        android:layout_height="219dp"
+        android:layout_marginTop="12dp"
+        android:onClick="clickSunFunction"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goofyPic"
+        app:srcCompat="@drawable/pic6" />
 </androidx.constraintlayout.widget.ConstraintLayout>
